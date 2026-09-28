@@ -107,8 +107,30 @@ elif tav <=30:
 
 #28
 
+szel = float(input("szelesseg: "))
+hossz = float(input("hosszusag: "))
+ado = float(input("Ado: "))
+if szel <= 15 and hossz <= 25:
+    ado = ado*0.8
+    print(ado)
 
-
+# 29. feladat
+ 
+t = int(input("evszam: "))
+a = t % 19
+b = t % 4
+c = t % 7
+d = (19*a + 24) % 30
+e = (2*b+4*c+6*d+5) % 7
+h = 22 + d + e
+if e == 6 and d == 29:
+    h = 50
+elif e == 6 and d == 28 and a > 10:
+    h = 49
+if h <= 31:
+    print(f"marcius {h}")
+else:
+    print(f"paril {h-31}")
 
 
 
